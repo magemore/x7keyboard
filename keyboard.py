@@ -35,7 +35,7 @@ while event:
 				os.system("xdotool key ctrl+shift+w")
 			elif value == 16:
 				# print("G5")
-				os.system("xdotool key Escape")
+				# os.system("xdotool key Escape")
 				os.system("xdotool key ctrl+backslash")
 			elif value == 32:
 				# print("G6")
