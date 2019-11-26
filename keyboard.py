@@ -41,9 +41,7 @@ while event:
 				os.system("xdotool key ctrl+p")
 			elif value == 64:
 				# print("G7")
-				os.system("code -r")
-				os.system("sleep 1")
-				os.system("code -r /srv/esf/web/application/controllers/ /srv/esf/web/application/views/ /srv/esf/web/application/models/ /srv/esf/web/application/libraries/ /srv/esf/web/sites/esfwholesalefurniture.com/controllers/ /srv/esf/web/sites/esfwholesalefurniture.com/views/ /home/a/autokey/keyboard.py /srv/esf/esf.info /home/a/notes/todo /home/a/notes/time.todo /srv/esf/esf.todo")
+				os.system("nohup brave; nohup konsole; code -r; sleep 2; code -r /srv/esf/web/application/controllers/ /srv/esf/web/application/views/ /srv/esf/web/application/models/ /srv/esf/web/application/libraries/ /srv/esf/web/sites/esfwholesalefurniture.com/controllers/ /srv/esf/web/sites/esfwholesalefurniture.com/views/ /home/a/autokey/keyboard.py /srv/esf/esf.info /home/a/notes/todo /home/a/notes/time.todo /srv/esf/esf.todo")
 			else:
 				if value != 0:
 					print("Event type %u, code %u, value %u at %d.%d" % (type, code, value, tv_sec, tv_usec))
