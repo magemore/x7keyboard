@@ -41,9 +41,9 @@ while event:
 				os.system("xdotool key ctrl+p")
 			elif value == 64:
 				# print("G7")
-				os.system("cd /home/a; nohup konsole")
-				os.system("nohup brave-browser")
-				os.system("nohup google-chrome")
+				os.system("cd /home/a; konsole &")
+				os.system("brave-browser &")
+				os.system("google-chrome &")
 				os.system("code -r; sleep 1; code -r /srv/esf/web/application/controllers/ /srv/esf/web/application/views/ /srv/esf/web/application/models/ /srv/esf/web/application/libraries/ /srv/esf/web/sites/esfwholesalefurniture.com/controllers/ /srv/esf/web/sites/esfwholesalefurniture.com/views/ /home/a/autokey/keyboard.py /srv/esf/esf.info /home/a/notes/todo /home/a/notes/time.todo /srv/esf/esf.todo")
 			else:
 				if value != 0:
