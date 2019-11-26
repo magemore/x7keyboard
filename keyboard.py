@@ -45,7 +45,8 @@ while event:
 				os.system("cd /home/a; konsole &")
 				os.system("brave-browser &")
 				os.system("google-chrome &")
-				os.system("code -r; sleep 1; code -r /srv/esf/web/application/controllers/ /srv/esf/web/application/views/ /srv/esf/web/application/models/ /srv/esf/web/application/libraries/ /srv/esf/web/sites/esfwholesalefurniture.com/controllers/ /srv/esf/web/sites/esfwholesalefurniture.com/views/ /home/a/autokey/keyboard.py /srv/esf/esf.info /home/a/notes/todo /home/a/notes/time.todo /srv/esf/esf.todo")
+				# os.system("code -r; sleep 1; code -r /srv/esf/web/application/controllers/ /srv/esf/web/application/views/ /srv/esf/web/application/models/ /srv/esf/web/application/libraries/ /srv/esf/web/sites/esfwholesalefurniture.com/controllers/ /srv/esf/web/sites/esfwholesalefurniture.com/views/ /home/a/autokey/keyboard.py /srv/esf/esf.info /home/a/notes/todo /home/a/notes/time.todo /srv/esf/esf.todo")
+				os.system("code -r; sleep 1; code -r /srv/buydev/web/wp-content/themes/yoome/ /home/a/autokey/keyboard.py /home/a/notes/todo /home/a/notes/time.todo /srv/buydev/buydev.todo")
 			else:
 				if value != 0:
 					print("Event type %u, code %u, value %u at %d.%d" % (type, code, value, tv_sec, tv_usec))
