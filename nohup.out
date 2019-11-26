@@ -1,9 +1,0 @@
-shell did not close, sending SIGHUP
-/usr/bin/brave-browser: line 48: 15969 Segmentation fault      (core dumped) "$HERE/brave" "$@"
-[16144:16144:1126/160316.130817:ERROR:viz_main_impl.cc(176)] Exiting GPU process due to errors during initialization
-
-(google-chrome:16106): GLib-GIO-CRITICAL **: 16:03:16.413: g_dbus_proxy_new: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
-/usr/bin/brave-browser: line 48: 17286 Segmentation fault      (core dumped) "$HERE/brave" "$@"
-[17443:17443:1126/160328.877774:ERROR:viz_main_impl.cc(176)] Exiting GPU process due to errors during initialization
-
-(google-chrome:17394): GLib-GIO-CRITICAL **: 16:03:29.230: g_dbus_proxy_new: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
