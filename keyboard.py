@@ -1,4 +1,4 @@
-и#!/usr/bin/python
+#!/usr/bin/python
 import struct
 import time
 import sys
