@@ -27,12 +27,14 @@ while event:
 				# print("G2")								
 				os.system("xdotool key ctrl+shift+v")
 			elif value == 4:
-				# print("G3")
 				# also G11
+				# print("G3")
 				os.system("xdotool key ctrl+shift+t")
 			elif value == 8:
-				# print("G4")
-				os.system("xdotool key ctrl+shift+w")
+				# also G12
+				print("G4")
+				os.system("xdotool key alt+shift")
+				os.system("xdotool key Escape")
 			elif value == 16:
 				# print("G5")
 				# os.system("xdotool key Escape")
@@ -42,11 +44,8 @@ while event:
 				os.system("xdotool key ctrl+p")
 			elif value == 64:
 				# print("G7")
-				os.system("cd /home/a; konsole &")
-				os.system("brave-browser &")
-				os.system("google-chrome &")
-				os.system("code -r; sleep 1; code -r /srv/esf/web/application/controllers/ /srv/esf/web/application/views/ /srv/esf/web/application/models/ /srv/esf/web/application/libraries/ /srv/esf/web/sites/esfwholesalefurniture.com/controllers/ /srv/esf/web/sites/esfwholesalefurniture.com/views/ /home/a/autokey/keyboard.py /srv/esf/esf.info /home/a/notes/todo /home/a/notes/time.todo /srv/esf/esf.todo")
-				# os.system("code -r; sleep 1; code -r /srv/buydev/web/wp-content/themes/yoome/ /home/a/autokey/keyboard.py /home/a/notes/todo /home/a/notes/time.todo /srv/buydev/buydev.todo")
+				os.system("xdotool key ctrl+shift+p")
+				
 			else:
 				if value != 0:
 					print("Event type %u, code %u, value %u at %d.%d" % (type, code, value, tv_sec, tv_usec))
