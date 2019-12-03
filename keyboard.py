@@ -15,6 +15,8 @@ in_file = open(infile_path, "rb")
 
 event = in_file.read(EVENT_SIZE)
 
+lang = "us"
+
 while event:
 	(tv_sec, tv_usec, type, code, value) = struct.unpack(FORMAT, event)
 	if type != 0 or code != 0 or value != 0:
@@ -33,8 +35,11 @@ while event:
 			elif value == 8:
 				# also G12
 				print("G4")
-				os.system("xdotool key alt+shift")
-				os.system("xdotool key Escape")
+				if lang == "us":
+					lang = "ru"
+				else:
+					lang = "us"
+				os.system("setxkbmap "+lang)
 			elif value == 16:
 				# print("G5")
 				# os.system("xdotool key Escape")
@@ -56,3 +61,5 @@ while event:
 	event = in_file.read(EVENT_SIZE)
 
 in_file.close()
+
+
