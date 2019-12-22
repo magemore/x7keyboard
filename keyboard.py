@@ -4,7 +4,7 @@ import time
 import sys
 import os
 
-infile_path = "/dev/input/event6"
+infile_path = "/dev/input/event5"
 
 #long int, long int, unsigned short, unsigned short, unsigned int
 FORMAT = 'llHHI'
@@ -34,7 +34,7 @@ while event:
 				os.system("xdotool key ctrl+shift+t")
 			elif value == 8:
 				# also G12
-				print("G4")
+				# print("G4")
 				if lang == "us":
 					lang = "ru"
 				else:
